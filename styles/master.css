@@ -1297,7 +1297,7 @@ body {
 .black-awards .awards25-wrapper .awards25-menu .dafes-menu-link:hover {
   color: #FEFEFE;
 }
-.black-awards .awards25-wrapper .awards25-menu .dafes-menu .dafes-menu-gold-head {
+.black-awards .awards25-wrapper .awards25-menu .dafes-menu-link-awards.active {
   color: #C8B464;
 }
 .black-awards .awards25-wrapper .awards25-menu .dafes-menu-mob {
@@ -1308,9 +1308,6 @@ body {
     display: flex;
     gap: 8px;
   }
-}
-.black-awards .awards25-wrapper .awards25-menu .dafes-menu-mob .dafes-menu-gold-head {
-  color: #C8B464;
 }
 .black-awards .awards25-wrapper .awards25-menu .dafes-menu-list-mob {
   display: none;
@@ -1335,16 +1332,25 @@ body {
   flex-direction: column;
   gap: 4px;
 }
-.black-awards .awards25-wrapper .awards25-head-sorting-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.black-awards .awards25-wrapper .awards25-images-best,
+.black-awards .awards25-wrapper .awards25-images-fashion,
+.black-awards .awards25-wrapper .awards25-images-education,
+.black-awards .awards25-wrapper .awards25-images-startups,
+.black-awards .awards25-wrapper .awards25-images-art {
+  display: none;
+}
+.black-awards .awards25-wrapper .awards25-images-best.active,
+.black-awards .awards25-wrapper .awards25-images-art.active,
+.black-awards .awards25-wrapper .awards25-images-fashion.active,
+.black-awards .awards25-wrapper .awards25-images-startups.active,
+.black-awards .awards25-wrapper .awards25-images-education.active {
+  display: grid;
 }
 .black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head {
-  grid-column: 1/5;
   display: flex;
-  gap: 16px;
+  flex-direction: row;
   align-items: center;
+  gap: 16px;
 }
 @media (max-width: 1199px) {
   .black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head {
@@ -1371,6 +1377,20 @@ body {
 }
 .black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3 {
   color: #C8B464;
+}
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-best,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-art,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-fashion,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-education,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-startups {
+  display: none;
+}
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-best.active,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-art.active,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-fashion.active,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-education.active,
+.black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards25-head .dafes-h3-startups.active {
+  display: block;
 }
 .black-awards .awards25-wrapper .awards25-head-sorting-wrapper .awards-menu-select-by {
   display: flex;
@@ -1470,6 +1490,8 @@ body {
 }
 .black-awards .awards25-wrapper .dafes-grid-block .awards25-image img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .black-awards .awards25-wrapper .dafes-grid-block .awards25-image::before {
   content: "";

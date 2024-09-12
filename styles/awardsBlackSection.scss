@@ -191,7 +191,7 @@
                     }
                 }
 
-                .dafes-menu-gold-head {
+                &-link-awards.active {
                     color: $primaryGoldDafes;
                 }
             }
@@ -205,7 +205,7 @@
                 }
 
                 .dafes-menu-gold-head {
-                    color: $primaryGoldDafes;
+                    //color: $primaryGoldDafes;
                 }
             }
 
@@ -237,16 +237,28 @@
             }
         }
 
-        .awards25-head-sorting-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .awards25-images-best,
+        .awards25-images-fashion,
+        .awards25-images-education,
+        .awards25-images-startups,
+        .awards25-images-art {
+            display: none;
+        }
 
+        .awards25-images-best.active,
+        .awards25-images-art.active,
+        .awards25-images-fashion.active,
+        .awards25-images-startups.active,
+        .awards25-images-education.active {
+            display: grid;
+        }
+
+        .awards25-head-sorting-wrapper {
             .awards25-head {
-                grid-column: 1/5;
                 display: flex;
-                gap: 16px;
+                flex-direction: row;
                 align-items: center;
+                gap: 16px;
 
                 @media (max-width: 1199px) {
                     gap: 12px;
@@ -271,6 +283,22 @@
 
                 .dafes-h3 {
                     color: $primaryGoldDafes;
+                }
+
+                .dafes-h3-best,
+                .dafes-h3-art,
+                .dafes-h3-fashion,
+                .dafes-h3-education,
+                .dafes-h3-startups {
+                    display: none;
+                }
+
+                .dafes-h3-best.active,
+                .dafes-h3-art.active,
+                .dafes-h3-fashion.active,
+                .dafes-h3-education.active,
+                .dafes-h3-startups.active {
+                    display: block;
                 }
             }
 
@@ -374,6 +402,8 @@
 
                 img {
                     object-fit: cover;
+                    width: 100%;
+                    height: 100%;
                 }
 
                 &::before {
