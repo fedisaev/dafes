@@ -1,0 +1,116 @@
+.dafes-header {
+    padding: 0 32px;
+
+    @media (max-width: 1199px) {
+        padding: 0 16px;
+    }
+}
+
+.dafes-header-awards {
+    padding: 0 24px;
+    background: $primaryBlackDafes;
+
+    @media (max-width: 1199px) {
+        padding: 0 16px;
+    }
+}
+
+.dafes-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+
+    @media (max-width: 1199px) {
+        height: 48px;
+    }
+}
+
+.dafes-nav-main {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.dafes-logo {
+    color: $primaryBlackDafes;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width: 1199px) {
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    }
+}
+
+.dafes-logo-awards {
+    color: $primaryWhiteDafes;
+}
+
+.dafes-menu {
+    display: flex;
+    gap: 8px;
+
+    @media (max-width: 743px) {
+        display: none;
+    }
+
+    &-link {
+        color: $primaryGrayDafes;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 1199px) {
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    &-link-awards {
+        color: $primaryGrayDafes;
+    }
+}
+
+.dafes-lang-switchers {
+    display: flex;
+    gap: 8px;
+
+    .dafes-switcher {
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        color: $primaryGrayDafes;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 1199px) {
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    .dafes-switcher-awards {
+        color: $primaryGrayDafes;
+    }
+
+    .dafes-switcher-active {
+        color: $primaryBlackDafes;
+    }
+
+    .dafes-switcher-active-awards {
+        color: $primaryWhiteDafes;
+    }
+}

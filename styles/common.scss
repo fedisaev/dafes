@@ -1,0 +1,312 @@
+body {
+    color: #151514;
+    font-family: Inter;
+}
+
+.dafes-wrapper-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+
+    @media(max-width: 1199px) {
+        gap: 40px;
+    }
+}
+
+.dafes-container {
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media(max-width: 1199px) {
+        max-width: 712px;
+    }
+
+    @media(max-width: 743px) {
+        max-width: calc(100vw - 20px);
+    }
+}
+
+.dafes-block-inner {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+
+    @media(max-width: 1199px) {
+        gap: 24px;
+    }
+}
+
+.dafes-join-button {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 48px;
+    justify-content: center;
+    align-items: center;
+    background: $primaryBlackDafes;
+    color: $primaryWhiteDafes;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+
+    @media(max-width: 1199px) {
+        padding: 8px 24px;
+        font-size: 15px;
+    }
+
+    @media(max-width: 743px) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.dafes-join-button-white {
+    background: $primaryWhiteDafes;
+    color: $primaryBlackDafes;
+}
+
+.dafes-big-button {
+    cursor: pointer;
+    background: $primaryGoldDafes;
+    width: 100%;
+    height: 382px;
+    flex-shrink: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: $primaryBlackDafes;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    border: none;
+    outline: none;
+
+    @media(max-width: 1199px) {
+        height: 234px;
+        padding: 8px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    @media(max-width: 743px) {
+        max-width: calc(100vw - 20px);
+        height: 120px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    > svg {
+        @media(max-width: 1199px) {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+        }
+    }
+
+    .dafes-big-button-go-to-page {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid $primaryBlackDafes;
+        padding-bottom: 8px;
+        width: 100%;
+
+        @media(max-width: 743px) {
+            flex-direction: row;
+            padding-bottom: 4px;
+        }
+
+        > :first-child {
+            margin-right: 4px;
+        }
+    }
+}
+
+.dafes-big-button-gray {
+    background: $secondaryWhiteDafes;
+    color: $primaryGrayDafes;
+    height: 270px;
+
+    @media(max-width: 1199px) {
+        height: 234px;
+    }
+
+    @media(max-width: 743px) {
+        height: 120px;
+    }
+}
+
+.dafes-grid-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    @media (max-width: 1199px) {
+        column-gap: 16px;
+    }
+
+    @media (max-width: 743px) {
+        grid-template-columns: 1fr;
+    }
+
+    &-left {
+        grid-column: 1/4;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media(max-width: 1199px) {
+            gap: 22px;
+        }
+
+        @media(max-width: 743px) {
+            grid-column: 1/2;
+            gap: 20px;
+        }
+    }
+
+    &-right-awards {
+        grid-column: 2/5;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media(max-width: 743px) {
+            grid-column: 1/2;
+        }
+    }
+}
+
+.align-self-end-grid {
+    align-self: end;
+
+    @media (max-width: 1199px) {
+        align-self: unset;
+    }
+}
+
+.dafes-h3 {
+    color: $primaryBlackDafes;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 1199px) {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    @media (max-width: 743px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    &-gold {
+        color: $primaryGoldDafes;
+    }
+
+    &-white {
+        color: $primaryWhiteDafes;
+    }
+
+    &-gray {
+        color: $secondaryGrayDafes;
+    }
+}
+
+.dafes-paragraph {
+    color: $primaryBlackDafes;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 1199px) {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    @media (max-width: 743px) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.dafes-paragraph-white {
+    color: $primaryWhiteDafes;
+}
+
+.dafes-paragraph-black {
+    color: $primaryBlackDafes;
+}
+
+.dafes-separator {
+    margin: 0;
+    height: 0;
+    width: 100%;
+    border-top: 1px solid $separatorDafes;
+}
+
+.dafes-block-double-headers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (max-width: 1199px) {
+        gap: 8px;
+    }
+}
+
+.header-on-plate {
+    padding: 8px 16px;
+
+    @media (max-width: 1199px) {
+        padding: 8px 12px;
+    }
+
+    @media (max-width: 743px) {
+        padding: 6px 10px;
+    }
+}
+
+.header-on-plate-education {
+    background: $primaryBlueDafes;
+}
+
+.header-on-plate-startups {
+    background: $primaryGreenDafes;
+}
+
+.header-on-plate-design {
+    background: $primaryRedDafes;
+}
+
+.header-on-plate-art {
+    background: $primaryPinkDafes;
+}
+
+.header-on-plate-fashion {
+    background: $primaryOrangeDafes;
+}
+
+

@@ -1,0 +1,119 @@
+.rules-partners-awards-wrapper {
+    background: $secondaryWhiteDafes;
+    padding: 40px 0;
+
+    @media (max-width: 1440px) {
+        padding: 56px 0;
+    }
+
+    @media (max-width: 1199px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 743px) {
+        padding: 16px 0;
+    }
+
+    .rules-partners-awards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media (max-width: 1199px) {
+            gap: 24px;
+        }
+
+        @media (max-width: 1199px) {
+            gap: 16px;
+        }
+
+        .dafes-grid-block {
+            @media (max-width: 1199px) {
+                gap: 16px;
+            }
+
+            @media (max-width: 1199px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .rules-logo {
+            align-self: start;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+
+            @media (max-width: 1199px) {
+                grid-column: 1/5;
+                gap: 12px;
+            }
+
+            @media (max-width: 743px) {
+                grid-column: 1/2;
+                gap: 8px;
+            }
+
+            svg {
+                @media (max-width: 1199px) {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @media (max-width: 743px) {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            h3 {
+                color: $primaryGoldDafes;
+            }
+        }
+
+        .awards-rules-text {
+            grid-column: 2/5;
+            color: $primaryBlackDafes;
+
+            @media (max-width: 1199px) {
+                grid-column: 1/5;
+            }
+
+            @media (max-width: 743px) {
+                grid-column: 1/2;
+            }
+        }
+
+        .rules-partners-awards-separator {
+            height: 2px;
+            width: 100%;
+            color: $primaryGrayDafes;
+            margin: 0;
+        }
+
+        .partners-awards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .dafes-grid-block {
+                gap: 8px;
+            }
+
+            .partners-link {
+                color: $primaryBlackDafes;
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: Inter;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: -0.02em;
+
+                @media (max-width: 1199px) {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

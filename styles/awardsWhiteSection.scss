@@ -1,0 +1,199 @@
+.white-awards-wrapper {
+    background: $backgroundWhiteDafes;
+    padding: 80px 0;
+
+    @media (max-width: 1199px) {
+        padding: 40px 0;
+    }
+
+    .white-awards {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        @media (max-width: 1199px) {
+            gap: 40px;
+        }
+
+        .dafes-grid-block {
+            @media (max-width: 1199px) {
+                gap: 16px;
+            }
+
+            @media (max-width: 743px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .nomination-headers {
+            grid-column: 1/5;
+            display: flex;
+            gap: 40px;
+            flex-direction: column;
+
+            @media (max-width: 1199px) {
+                gap: 24px;
+            }
+
+            @media (max-width: 743px) {
+                grid-column: 1/3;
+                gap: 8px;
+            }
+
+            .nomination-gold-head {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+
+                @media (max-width: 1199px) {
+                    gap: 12px;
+                }
+
+                @media (max-width: 743px) {
+                    gap: 8px;
+                }
+
+                svg {
+                    @media (max-width: 1199px) {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    @media (max-width: 743px) {
+                        grid-column: 1/3;
+                        align-self: start;
+                    }
+                }
+
+                .header-on-plate-awards-gold {
+                    color: $primaryGoldDafes
+                }
+            }
+        }
+
+        .nomination-category-card {
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+
+            @media (max-width: 1199px) {
+                gap: 16px;
+            }
+
+            @media (max-width: 743px) {
+                gap: 12px;
+            }
+
+            span {
+                color: $primaryBlackDafes;
+                font-family: Inter;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: -0.02em;
+
+                @media (max-width: 1199px) {
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+
+            .nomination-category-card-head {
+                .head3-awards-design {
+                    color: $primaryRedDafes;
+                }
+
+                .category-name-design {
+                    color: $primaryRedDafes;
+                }
+
+                .head3-awards-art {
+                    color: $primaryPinkDafes;
+                }
+
+                .category-name-art {
+                    color: $primaryPinkDafes;
+                }
+            }
+
+            .nomination-category-card-separator {
+                color: $primaryGrayDafes;
+                height: 2px;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nomination-category-card-separator-d2 {
+                margin-top: 18px;
+
+                @media(max-width: 743px) {
+                    margin-top: 0;
+                }
+
+                @media(max-width: 371px) {
+                    margin-top: 18px;
+                }
+            }
+
+
+            .nomination-category-card-separator-d4 {
+                margin-top: 18px;
+
+                @media(max-width: 743px) {
+                    margin-top: 0;
+                }
+
+                @media(max-width: 441px) {
+                    margin-top: 18px;
+                }
+            }
+
+            .nomination-category-card-separator-a4 {
+
+                @media(max-width: 350px) {
+                    margin-top: 18px;
+                }
+            }
+
+            .nominations-list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                @media (max-width: 743px) {
+                    gap: 4px;
+                }
+
+                .nominations-item {
+                    .nominations-link {
+                        color: $primaryBlackDafes;
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-family: Inter;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: -0.02em;
+
+                        @media (max-width: 1199px) {
+                            font-size: 13px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+
+            .dafes-join-button {
+                margin-top: auto;
+            }
+        }
+
+        .hidden-blocks {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}

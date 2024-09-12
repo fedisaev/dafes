@@ -1,0 +1,100 @@
+.white-block {
+
+    .white-block-logo {
+        width: 866px;
+        height: 64px;
+
+        @media(max-width: 1199px) {
+            width: 712px;
+            height: 52.5px;
+        }
+
+        @media(max-width: 743px) {
+            height: 24px;
+            width: 325.5px;
+        }
+
+        @media(max-width: 375px) {
+            display: none;
+        }
+    }
+
+    .white-block-logo-mob {
+        display: none;
+
+        @media(max-width: 375px) {
+            display: flex;
+            gap: 8px;
+        }
+
+        @media(max-width: 375px) {
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+
+    .dafes-grid-block {
+
+        .dafes-grid-block-right {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            @media(max-width: 1199px) {
+                gap: 24px;
+            }
+
+            .bottom-right-list-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                @media(max-width: 1199px) {
+                    gap: 16px;
+                }
+
+                .bottom-right-list-head {
+                    color: $primaryBlackDafes;
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 25px;
+                    letter-spacing: -0.02em;
+
+                    @media(max-width: 1199px) {
+                        font-size: 17px;
+                        line-height: 22px;
+                    }
+                }
+
+                .bottom-right-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    @media(max-width: 1199px) {
+                        gap: 8px;
+                    }
+
+                    &-item {
+                        color: $primaryBlackDafes;
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-family: Inter;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: -0.02em;
+
+                        @media(max-width: 1199px) {
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

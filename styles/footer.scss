@@ -1,0 +1,19 @@
+.dafes-footer-wrapper {
+    height: 225px;
+    padding: 40px 0;
+    background: $primaryBlackDafes;
+
+    .dafes-footer {
+        svg {
+            @media(max-width: 1199px) {
+                width: 220px;
+                height: 48px;
+            }
+
+            @media(max-width: 743px) {
+                width: 145px;
+                height: 32px;
+            }
+        }
+    }
+}
