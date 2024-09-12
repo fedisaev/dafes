@@ -1,20 +1,28 @@
 .integration-block {
-    padding-top: 24px;
+    padding-top: 40px;
     border-top: 2px solid $primaryBlackDafes;
+
+    @media(max-width: 1199px) {
+        padding-top: 24px;
+    }
 
     &-logo {
         svg {
             @media(max-width: 1199px) {
-                width: 218px;
-                height: 40px;
+                width: 182px;
+                height: 33px;
             }
         }
     }
 }
 
 .platform-block {
-    padding-top: 24px;
+    padding-top: 40px;
     border-top: 2px solid $primaryBlackDafes;
+
+    @media(max-width: 1199px) {
+        padding-top: 24px;
+    }
 
     &-logo {
         width: 474px;
