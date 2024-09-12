@@ -570,10 +570,10 @@ body {
 .dafes-lang-switchers .dafes-switcher-awards {
   color: #909090;
 }
-.dafes-lang-switchers .dafes-switcher-active {
+.dafes-lang-switchers .dafes-switcher-main.active {
   color: #151514;
 }
-.dafes-lang-switchers .dafes-switcher-active-awards {
+.dafes-lang-switchers .dafes-switcher-awards.active {
   color: #FEFEFE;
 }
 
@@ -1810,37 +1810,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-d2 {
-  margin-top: 18px;
-}
-@media (max-width: 743px) {
-  .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-d2 {
-    margin-top: 0;
-  }
-}
-@media (max-width: 371px) {
-  .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-d2 {
-    margin-top: 18px;
-  }
-}
-.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-d4 {
-  margin-top: 18px;
-}
-@media (max-width: 743px) {
-  .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-d4 {
-    margin-top: 0;
-  }
-}
-@media (max-width: 441px) {
-  .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-d4 {
-    margin-top: 18px;
-  }
-}
-@media (max-width: 350px) {
-  .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator-a4 {
-    margin-top: 18px;
-  }
 }
 .white-awards-wrapper .white-awards .nomination-category-card .nominations-list {
   display: flex;

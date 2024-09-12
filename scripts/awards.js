@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
             link.classList.remove('active');
         });
         const activeLink = document.querySelector(`.dafes-menu-link[data-target="${target}"]`);
-        console.log(activeLink);
         if (activeLink) {
             activeLink.classList.add('active');
         }

@@ -106,11 +106,11 @@
         color: $primaryGrayDafes;
     }
 
-    .dafes-switcher-active {
+    .dafes-switcher-main.active {
         color: $primaryBlackDafes;
     }
 
-    .dafes-switcher-active-awards {
+    .dafes-switcher-awards.active {
         color: $primaryWhiteDafes;
     }
 }
