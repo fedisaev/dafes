@@ -1792,17 +1792,20 @@ body {
     line-height: 16px;
   }
 }
-.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-design {
+.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-design, .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-design {
   color: #FF0000;
 }
-.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-design {
-  color: #FF0000;
-}
-.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-art {
+.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-art, .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-art {
   color: #FF6BFF;
 }
-.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-art {
-  color: #FF6BFF;
+.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-fashion, .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-fashion {
+  color: #FF8C00;
+}
+.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-education, .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-education {
+  color: #5C97FF;
+}
+.white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .head3-awards-startups, .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-head .category-name-startups {
+  color: #4EF100;
 }
 .white-awards-wrapper .white-awards .nomination-category-card .nomination-category-card-separator {
   color: #909090;

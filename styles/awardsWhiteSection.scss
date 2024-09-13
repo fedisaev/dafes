@@ -100,20 +100,23 @@
             }
 
             .nomination-category-card-head {
-                .head3-awards-design {
+                .head3-awards-design, .category-name-design {
                     color: $primaryRedDafes;
                 }
 
-                .category-name-design {
-                    color: $primaryRedDafes;
-                }
-
-                .head3-awards-art {
+                .head3-awards-art, .category-name-art {
                     color: $primaryPinkDafes;
                 }
+                .head3-awards-fashion, .category-name-fashion {
+                    color: $primaryOrangeDafes;
+                }
 
-                .category-name-art {
-                    color: $primaryPinkDafes;
+                .head3-awards-education, .category-name-education {
+                    color: $primaryBlueDafes;
+                }
+
+                .head3-awards-startups, .category-name-startups {
+                    color: $primaryGreenDafes;
                 }
             }
 
@@ -123,38 +126,6 @@
                 width: 100%;
                 margin: 0;
                 padding: 0;
-            }
-
-            .nomination-category-card-separator-d2 {
-                //margin-top: 18px;
-                //
-                //@media(max-width: 743px) {
-                //    margin-top: 0;
-                //}
-                //
-                //@media(max-width: 371px) {
-                //    margin-top: 18px;
-                //}
-            }
-
-
-            .nomination-category-card-separator-d4 {
-                //margin-top: 18px;
-                //
-                //@media(max-width: 743px) {
-                //    margin-top: 0;
-                //}
-                //
-                //@media(max-width: 441px) {
-                //    margin-top: 18px;
-                //}
-            }
-
-            .nomination-category-card-separator-a4 {
-
-                //@media(max-width: 350px) {
-                //    margin-top: 18px;
-                //}
             }
 
             .nominations-list {
