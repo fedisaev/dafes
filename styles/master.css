@@ -682,18 +682,14 @@ body {
     padding: 16px 10px;
   }
 }
-.slider-wrapper .slider-item-left-top {
-  width: 291px;
-  height: 64px;
-}
 @media (max-width: 1199px) {
-  .slider-wrapper .slider-item-left-top {
-    width: 220.286px;
-    height: 48px;
+  .slider-wrapper .slider-item-left-top svg {
+    width: 240px;
+    height: 52.5px;
   }
 }
 @media (max-width: 743px) {
-  .slider-wrapper .slider-item-left-top {
+  .slider-wrapper .slider-item-left-top svg {
     width: 146px;
     height: 32px;
   }
@@ -703,20 +699,64 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.slider-wrapper .slider-item-left-bottom .bottom-svg-category {
-  width: 511px;
-  height: 56px;
-}
 @media (max-width: 1199px) {
-  .slider-wrapper .slider-item-left-bottom .bottom-svg-category {
-    width: 437px;
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-education svg {
+    width: 445px;
     height: 48px;
   }
 }
 @media (max-width: 743px) {
-  .slider-wrapper .slider-item-left-bottom .bottom-svg-category {
-    width: 183px;
-    height: 20px;
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-education svg {
+    width: 296px;
+    height: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-startups svg {
+    width: 390px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-startups svg {
+    width: 260px;
+    height: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-design svg {
+    width: 294px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-design svg {
+    width: 196px;
+    height: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-art svg {
+    width: 151px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-art svg {
+    width: 100px;
+    height: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-fashion svg {
+    width: 321px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .slider-wrapper .slider-item-left-bottom .bottom-svg-fashion svg {
+    width: 214px;
+    height: 32px;
   }
 }
 @media (max-width: 1199px) {

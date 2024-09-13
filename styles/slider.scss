@@ -72,17 +72,16 @@
                 }
 
                 &-top {
-                    width: 291px;
-                    height: 64px;
+                    svg {
+                        @media (max-width: 1199px) {
+                            width: 240px;
+                            height: 52.5px;
+                        }
 
-                    @media (max-width: 1199px) {
-                        width: 220.286px;
-                        height: 48px;
-                    }
-
-                    @media (max-width: 743px) {
-                        width: 146px;
-                        height: 32px;
+                        @media (max-width: 743px) {
+                            width: 146px;
+                            height: 32px;
+                        }
                     }
                 }
 
@@ -91,17 +90,73 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    .bottom-svg-category {
-                        width: 511px;
-                        height: 56px;
+                    .bottom-svg-education {
+                        svg {
+                            @media (max-width: 1199px) {
+                                width: 445px;
+                                height: 48px;
+                            }
 
-                        @media (max-width: 1199px) {
-                            width: 437px;
-                            height: 48px;
+                            @media (max-width: 743px) {
+                                width: 296px;
+                                height: 32px;
+                            }
                         }
-                        @media (max-width: 743px) {
-                            width: 183px;
-                            height: 20px;
+                    }
+
+                    .bottom-svg-startups {
+                        svg {
+                            @media (max-width: 1199px) {
+                                width: 390px;
+                                height: 48px;
+                            }
+
+                            @media (max-width: 743px) {
+                                width: 260px;
+                                height: 32px;
+                            }
+                        }
+                    }
+
+                    .bottom-svg-design {
+                        svg {
+                            @media (max-width: 1199px) {
+                                width: 294px;
+                                height: 48px;
+                            }
+
+                            @media (max-width: 743px) {
+                                width: 196px;
+                                height: 32px;
+                            }
+                        }
+                    }
+
+                    .bottom-svg-art {
+                        svg {
+                            @media (max-width: 1199px) {
+                                width: 151px;
+                                height: 48px;
+                            }
+
+                            @media (max-width: 743px) {
+                                width: 100px;
+                                height: 32px;
+                            }
+                        }
+                    }
+
+                    .bottom-svg-fashion {
+                        svg {
+                            @media (max-width: 1199px) {
+                                width: 321px;
+                                height: 48px;
+                            }
+
+                            @media (max-width: 743px) {
+                                width: 214px;
+                                height: 32px;
+                            }
                         }
                     }
 
