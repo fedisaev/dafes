@@ -1582,6 +1582,9 @@ body {
   -webkit-box-orient: vertical;
   max-width: 100%;
 }
+.black-awards .section-top-events-wrapper {
+  display: none;
+}
 .black-awards .section-top-events-wrapper .dafes-block-double-headers .section-top-events-header-gold {
   display: flex;
   gap: 16px;
