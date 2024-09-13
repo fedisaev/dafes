@@ -1,28 +1,44 @@
 .white-block {
 
-    .white-block-logo {
-        width: 866px;
-        height: 64px;
+    .white-block-logo-ru {
+        @media(max-width: 600px) {
+            display: none !important;
+        }
+        svg {
+            @media(max-width: 1199px) {
+                width: 710px;
+                height: 52.5px;
+            }
 
-        @media(max-width: 1199px) {
-            width: 712px;
-            height: 52.5px;
+            @media(max-width: 743px) {
+                width: 540px;
+                height: 40px;
+            }
+        }
+    }
+
+    .white-block-logo-en {
+        @media(max-width: 600px) {
+            display: none !important;
         }
 
-        @media(max-width: 743px) {
-            height: 24px;
-            width: 325.5px;
-        }
+        svg {
+            @media(max-width: 1199px) {
+                width: 700px;
+                height: 44px;
+            }
 
-        @media(max-width: 375px) {
-            display: none;
+            @media(max-width: 743px) {
+                width: 509px;
+                height: 32px;
+            }
         }
     }
 
     .white-block-logo-mob {
         display: none;
 
-        @media(max-width: 375px) {
+        @media(max-width: 600px) {
             display: flex;
             gap: 8px;
         }

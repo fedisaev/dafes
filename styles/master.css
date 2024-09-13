@@ -811,31 +811,44 @@ body {
   background: #5C97FF;
 }
 
-.white-block .white-block-logo {
-  width: 866px;
-  height: 64px;
+@media (max-width: 600px) {
+  .white-block .white-block-logo-ru {
+    display: none !important;
+  }
 }
 @media (max-width: 1199px) {
-  .white-block .white-block-logo {
-    width: 712px;
+  .white-block .white-block-logo-ru svg {
+    width: 710px;
     height: 52.5px;
   }
 }
 @media (max-width: 743px) {
-  .white-block .white-block-logo {
-    height: 24px;
-    width: 325.5px;
+  .white-block .white-block-logo-ru svg {
+    width: 540px;
+    height: 40px;
   }
 }
-@media (max-width: 375px) {
-  .white-block .white-block-logo {
-    display: none;
+@media (max-width: 600px) {
+  .white-block .white-block-logo-en {
+    display: none !important;
+  }
+}
+@media (max-width: 1199px) {
+  .white-block .white-block-logo-en svg {
+    width: 700px;
+    height: 44px;
+  }
+}
+@media (max-width: 743px) {
+  .white-block .white-block-logo-en svg {
+    width: 509px;
+    height: 32px;
   }
 }
 .white-block .white-block-logo-mob {
   display: none;
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .white-block .white-block-logo-mob {
     display: flex;
     gap: 8px;

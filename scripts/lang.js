@@ -4,6 +4,17 @@ function switchLanguage(lang) {
     translatableElements.forEach(element => {
         element.textContent = element.getAttribute(`data-lang-${lang}`);
     });
+
+    const svgRu = document.querySelector('[data-lang-svg-ru]');
+    const svgEn = document.querySelector('[data-lang-svg-en]');
+
+    if (lang === 'ru') {
+        svgRu.style.display = 'block';
+        svgEn.style.display = 'none';
+    } else if (lang === 'en') {
+        svgRu.style.display = 'none';
+        svgEn.style.display = 'block';
+    }
 }
 
 const langSwitchers = document.querySelectorAll('.dafes-switcher');
