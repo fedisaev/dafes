@@ -212,6 +212,35 @@ body {
   color: #151514;
 }
 
+.world-logo-with-join-button {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  .world-logo-with-join-button {
+    flex-direction: row;
+    align-items: center;
+    grid-column: 1/5;
+  }
+}
+@media (max-width: 743px) {
+  .world-logo-with-join-button {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 1199px) {
+  .world-logo-with-join-button svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 743px) {
+  .world-logo-with-join-button svg {
+    display: none;
+  }
+}
+
 .dafes-big-button {
   cursor: pointer;
   background: #C8B464;
@@ -374,6 +403,9 @@ body {
 }
 .dafes-h3-gray {
   color: #B3B3B3;
+}
+.dafes-h3-blue {
+  color: #5C97FF;
 }
 
 .dafes-paragraph {
@@ -1153,34 +1185,6 @@ body {
     height: calc((100vw - 20px) * 0.15);
   }
 }
-.black-awards .black-awards-top .world-logo-with-join-button {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-@media (max-width: 1199px) {
-  .black-awards .black-awards-top .world-logo-with-join-button {
-    flex-direction: row;
-    align-items: center;
-    grid-column: 1/5;
-  }
-}
-@media (max-width: 743px) {
-  .black-awards .black-awards-top .world-logo-with-join-button {
-    grid-column: 1/2;
-  }
-}
-@media (max-width: 1199px) {
-  .black-awards .black-awards-top .world-logo-with-join-button svg {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media (max-width: 743px) {
-  .black-awards .black-awards-top .world-logo-with-join-button svg {
-    display: none;
-  }
-}
 .black-awards .black-awards-top .dafes-grid-block-right-awards-text {
   grid-column: 2/5;
 }
@@ -1878,7 +1882,7 @@ body {
     gap: 24px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 743px) {
   .rules-partners-awards-wrapper .rules-partners-awards {
     gap: 16px;
   }
@@ -1888,7 +1892,7 @@ body {
     gap: 16px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 743px) {
   .rules-partners-awards-wrapper .rules-partners-awards .dafes-grid-block {
     grid-template-columns: 1fr;
   }
@@ -1968,6 +1972,162 @@ body {
   .rules-partners-awards-wrapper .rules-partners-awards .partners-awards .partners-link {
     font-size: 15px;
     line-height: 20px;
+  }
+}
+
+.dafes-education-top-wrapper {
+  background: #5C97FF;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+@media (max-width: 743px) {
+  .dafes-education-top-wrapper {
+    padding: 24px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-top-wrapper .dafes-grid-block {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-top-wrapper .dafes-grid-block .dafes-small-logo svg {
+    width: 220.286px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-education-top-wrapper .dafes-grid-block .dafes-small-logo svg {
+    width: 146px;
+    height: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-top-wrapper .dafes-grid-block .dafes-grid-block-right-awards {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-top-wrapper .dafes-grid-block .dafes-grid-block-right-awards svg {
+    width: 437px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-education-top-wrapper .dafes-grid-block .dafes-grid-block-right-awards svg {
+    width: 183px;
+    height: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-top-wrapper .dafes-grid-block .world-logo-with-join-button {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
+
+.dafes-education-block {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 743px) {
+  .dafes-education-information-block .dafes-icon-plus {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-information-block .dafes-icon-plus svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+.dafes-education-information-block .dafes-grid-block-right-awards {
+  gap: 24px;
+}
+@media (max-width: 743px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards {
+    grid-column: 1/2;
+  }
+}
+.dafes-education-information-block .dafes-grid-block-right-awards .education-plus-head {
+  display: flex;
+  gap: 12px;
+}
+.dafes-education-information-block .dafes-grid-block-right-awards .education-plus-head .dafes-icon-plus {
+  display: none;
+}
+@media (max-width: 743px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards .education-plus-head .dafes-icon-plus {
+    display: block;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards .education-plus-head .dafes-icon-plus svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list .education-opportunities-item {
+  position: relative;
+  padding-left: 24px;
+}
+@media (max-width: 1199px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list .education-opportunities-item {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list .education-opportunities-item {
+    padding-left: 16px;
+  }
+}
+.dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list .education-opportunities-item::before {
+  content: "●";
+  color: #151514;
+  font-size: 28px;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+@media (max-width: 1199px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list .education-opportunities-item::before {
+    font-size: 22px;
+    top: -2px;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-education-information-block .dafes-grid-block-right-awards .education-opportunities-list .education-opportunities-item::before {
+    font-size: 20px;
+    top: -1px;
+  }
+}
+
+.dafes-education-information-block-wrapper {
+  padding: 40px 0;
+}
+
+.dafes-education-collaboration-wrapper {
+  background: #F2F2F2;
+  padding: 40px 0;
+}
+@media (max-width: 743px) {
+  .dafes-education-collaboration-wrapper {
+    padding: 24px 0;
+  }
+}
+.dafes-education-collaboration-wrapper .dafes-education-collaboration .dafes-grid-block .align-self-end-grid {
+  align-self: end;
+}
+@media (max-width: 743px) {
+  .dafes-education-collaboration-wrapper .dafes-education-collaboration .dafes-grid-block .align-self-end-grid {
+    grid-row: 2/3;
   }
 }
 

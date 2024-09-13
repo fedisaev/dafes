@@ -48,33 +48,6 @@
             }
         }
 
-        .world-logo-with-join-button {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-
-            @media (max-width: 1199px) {
-                flex-direction: row;
-                align-items: center;
-                grid-column: 1/5;
-            }
-
-            @media (max-width: 743px) {
-                grid-column: 1/2;
-            }
-
-            svg {
-                @media (max-width: 1199px) {
-                    width: 40px;
-                    height: 40px;
-                }
-
-                @media (max-width: 743px) {
-                    display: none;
-                }
-            }
-        }
-
         .dafes-grid-block-right-awards-text {
             grid-column: 2/5;
 
