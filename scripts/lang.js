@@ -5,15 +5,23 @@ function switchLanguage(lang) {
         element.textContent = element.getAttribute(`data-lang-${lang}`);
     });
 
-    const svgRu = document.querySelector('[data-lang-svg-ru]');
-    const svgEn = document.querySelector('[data-lang-svg-en]');
+    const svgRuElements = document.querySelectorAll('[data-lang-svg-ru]');
+    const svgEnElements = document.querySelectorAll('[data-lang-svg-en]');
 
     if (lang === 'ru') {
-        svgRu.style.display = 'block';
-        svgEn.style.display = 'none';
+        svgRuElements.forEach(svg => {
+            svg.style.display = 'block';
+        });
+        svgEnElements.forEach(svg => {
+            svg.style.display = 'none';
+        });
     } else if (lang === 'en') {
-        svgRu.style.display = 'none';
-        svgEn.style.display = 'block';
+        svgRuElements.forEach(svg => {
+            svg.style.display = 'none';
+        });
+        svgEnElements.forEach(svg => {
+            svg.style.display = 'block';
+        });
     }
 }
 

@@ -37,7 +37,7 @@
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 
     @media (max-width: 1199px) {
@@ -117,9 +117,11 @@
 
     .dafes-switcher-main.active {
         color: $primaryBlackDafes;
+        font-weight: 600;
     }
 
     .dafes-switcher-awards.active {
         color: $primaryWhiteDafes;
+        font-weight: 600;
     }
 }
