@@ -830,6 +830,12 @@ body {
     height: 40px;
   }
 }
+@media (max-width: 600px) {
+  .white-block .white-block-logo-ru svg {
+    width: calc(100vw - 80px);
+    height: calc((100vw - 80px) * 0.074);
+  }
+}
 @media (max-width: 1199px) {
   .white-block .white-block-logo-en svg {
     width: 700px;
@@ -840,6 +846,12 @@ body {
   .white-block .white-block-logo-en svg {
     width: 509px;
     height: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .white-block .white-block-logo-en svg {
+    width: calc(100vw - 80px);
+    height: calc((100vw - 80px) * 0.062);
   }
 }
 .white-block .dafes-grid-block .dafes-grid-block-right {
