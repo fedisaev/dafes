@@ -14,6 +14,8 @@ window.addEventListener('resize', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuLinks = document.querySelectorAll('.second-level-menu');
+    const selectedSpan = document.querySelector('.dafes-menu-gold-head.selected');
+    const menuList = document.querySelector('.dafes-menu-list-mob');
 
     function switchContent(target) {
         document.querySelectorAll('.dafes-h3-best, .dafes-h3-art, .dafes-h3-fashion, .dafes-h3-education, .dafes-h3-startups,.awards25-images-best, .awards25-images-art,.awards25-images-fashion, .awards25-images-education,.awards25-images-startups')
@@ -35,6 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const activeLink = document.querySelector(`.dafes-menu-link[data-target="${target}"]`);
         if (activeLink) {
             activeLink.classList.add('active');
+        }
+        if (activeLink && selectedSpan) {
+            selectedSpan.textContent = activeLink.textContent;
+        }
+
+        if (menuList) {
+            menuList.classList.remove('active');
         }
     }
 

@@ -196,12 +196,13 @@ body {
 }
 @media (max-width: 1199px) {
   .dafes-join-button {
-    padding: 8px 24px;
-    font-size: 15px;
+    padding: 8px 16px;
+    width: 166px;
   }
 }
 @media (max-width: 743px) {
   .dafes-join-button {
+    width: 100%;
     font-size: 15px;
     line-height: 20px;
   }
@@ -239,6 +240,10 @@ body {
   .world-logo-with-join-button svg {
     display: none;
   }
+}
+
+.dafes-join-button-link {
+  width: 100%;
 }
 
 .dafes-big-button {
@@ -897,6 +902,11 @@ body {
 .black-block {
   gap: 24px;
 }
+@media (max-width: 1199px) {
+  .black-block {
+    gap: 16px;
+  }
+}
 .black-block .black-block-logos .black-block-small-logo {
   width: 289px;
   height: 56px;
@@ -927,6 +937,11 @@ body {
 }
 .black-block .dafes-grid-block {
   row-gap: 40px;
+}
+@media (max-width: 1199px) {
+  .black-block .dafes-grid-block {
+    row-gap: 24px;
+  }
 }
 .black-block .dafes-grid-block-right {
   grid-row: 1/3;
@@ -1014,6 +1029,14 @@ body {
   }
 }
 
+.advice-block .dafes-grid-block {
+  row-gap: 40px;
+}
+@media (max-width: 1199px) {
+  .advice-block .dafes-grid-block {
+    row-gap: 24px;
+  }
+}
 @media (max-width: 1199px) {
   .advice-block .dafes-grid-block-left .advice-block-logo-ru svg {
     width: 530px;
@@ -1065,6 +1088,12 @@ body {
   }
 }
 @media (max-width: 1199px) {
+  .integration-block-logo svg {
+    width: 264px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
   .integration-block-logo svg {
     width: 182px;
     height: 33px;
@@ -1125,7 +1154,7 @@ body {
   width: 100%;
   background: #F2F2F2;
 }
-@media (max-width: 1199px) {
+@media (max-width: 743px) {
   .dafes-partners-wrapper {
     padding: 16px 0;
   }
@@ -1351,6 +1380,9 @@ body {
     display: flex;
     gap: 8px;
   }
+}
+.black-awards .awards25-wrapper .awards25-menu .dafes-menu-mob .dafes-menu-gold-head {
+  color: #C8B464;
 }
 .black-awards .awards25-wrapper .awards25-menu .dafes-menu-list-mob {
   display: none;

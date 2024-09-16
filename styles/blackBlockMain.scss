@@ -11,6 +11,10 @@
 .black-block {
     gap: 24px;
 
+    @media (max-width: 1199px) {
+        gap: 16px;
+    }
+
     .black-block-logos {
         .black-block-small-logo {
             width: 289px;
@@ -44,6 +48,9 @@
 
     .dafes-grid-block {
         row-gap: 40px;
+        @media (max-width: 1199px) {
+            row-gap: 24px;
+        }
     }
 
     .dafes-grid-block-right {

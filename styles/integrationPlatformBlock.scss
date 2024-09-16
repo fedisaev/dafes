@@ -9,6 +9,11 @@
     &-logo {
         svg {
             @media(max-width: 1199px) {
+                width: 264px;
+                height: 48px;
+            }
+
+            @media(max-width: 743px) {
                 width: 182px;
                 height: 33px;
             }

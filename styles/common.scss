@@ -57,11 +57,12 @@ body {
     letter-spacing: -0.02em;
 
     @media(max-width: 1199px) {
-        padding: 8px 24px;
-        font-size: 15px;
+        padding: 8px 16px;
+        width: 166px;
     }
 
     @media(max-width: 743px) {
+        width: 100%;
         font-size: 15px;
         line-height: 20px;
     }
@@ -97,6 +98,10 @@ body {
             display: none;
         }
     }
+}
+
+.dafes-join-button-link {
+    width: 100%;
 }
 
 .dafes-big-button {

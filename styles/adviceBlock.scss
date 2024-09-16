@@ -1,4 +1,12 @@
 .advice-block {
+    .dafes-grid-block {
+        row-gap: 40px;
+
+        @media (max-width: 1199px) {
+            row-gap: 24px;
+        }
+    }
+
     .dafes-grid-block-left {
         .advice-block-logo-ru {
             svg {
