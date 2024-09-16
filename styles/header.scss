@@ -53,7 +53,7 @@
 
 .dafes-menu {
     display: flex;
-    gap: 8px;
+    gap: 24px;
 
     @media (max-width: 743px) {
         display: none;
@@ -66,11 +66,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        transition: color 0.3s ease;
 
         @media (max-width: 1199px) {
             font-size: 17px;
             line-height: 22px;
             letter-spacing: -0.02em;
+        }
+
+        &:hover {
+            color: $primaryBlackDafes;
         }
     }
 

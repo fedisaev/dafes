@@ -550,7 +550,7 @@ body {
 
 .dafes-menu {
   display: flex;
-  gap: 8px;
+  gap: 24px;
 }
 @media (max-width: 743px) {
   .dafes-menu {
@@ -564,6 +564,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: color 0.3s ease;
 }
 @media (max-width: 1199px) {
   .dafes-menu-link {
@@ -571,6 +572,9 @@ body {
     line-height: 22px;
     letter-spacing: -0.02em;
   }
+}
+.dafes-menu-link:hover {
+  color: #151514;
 }
 .dafes-menu-link-awards {
   color: #909090;
@@ -811,11 +815,6 @@ body {
   background: #5C97FF;
 }
 
-@media (max-width: 600px) {
-  .white-block .white-block-logo-ru {
-    display: none !important;
-  }
-}
 @media (max-width: 1199px) {
   .white-block .white-block-logo-ru svg {
     width: 710px;
@@ -826,11 +825,6 @@ body {
   .white-block .white-block-logo-ru svg {
     width: 540px;
     height: 40px;
-  }
-}
-@media (max-width: 600px) {
-  .white-block .white-block-logo-en {
-    display: none !important;
   }
 }
 @media (max-width: 1199px) {
@@ -845,17 +839,25 @@ body {
     height: 32px;
   }
 }
-.white-block .white-block-logo-mob {
-  display: none;
+@media (max-width: 600px) {
+  .white-block .white-block-logo-mob-ru {
+    gap: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .white-block .white-block-logo-mob-ru {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 @media (max-width: 600px) {
-  .white-block .white-block-logo-mob {
+  .white-block .white-block-logo-mob-en {
     display: flex;
     gap: 8px;
   }
 }
 @media (max-width: 375px) {
-  .white-block .white-block-logo-mob {
+  .white-block .white-block-logo-mob-en {
     flex-direction: column;
     gap: 4px;
   }
