@@ -962,20 +962,40 @@ body {
   gap: 8px;
   align-items: end;
 }
-.black-block .black-block-award-list .black-block-award-parts .awards-parts-number {
-  color: #C8B464;
-  font-feature-settings: "liga" off, "clig" off;
-  font-family: Inter;
-  font-size: 85px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 96px;
-  letter-spacing: -0.02em;
+@media (max-width: 1199px) {
+  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number-profiles svg {
+    width: 35.223px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number-profiles svg {
+    width: 26.417px;
+    height: 36px;
+  }
 }
 @media (max-width: 1199px) {
-  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number {
-    font-size: 51px;
-    line-height: 60px;
+  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number-categories svg {
+    width: 80.409px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number-categories svg {
+    width: 60.306px;
+    height: 36px;
+  }
+}
+@media (max-width: 1199px) {
+  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number-nominations svg {
+    width: 81.429px;
+    height: 48px;
+  }
+}
+@media (max-width: 743px) {
+  .black-block .black-block-award-list .black-block-award-parts .awards-parts-number-nominations svg {
+    width: 61.072px;
+    height: 36px;
   }
 }
 .black-block .black-block-award-list .black-block-award-parts .awards-parts-category {
@@ -984,16 +1004,14 @@ body {
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 25px;
   letter-spacing: -0.02em;
-  margin-bottom: 12px;
 }
 @media (max-width: 1199px) {
   .black-block .black-block-award-list .black-block-award-parts .awards-parts-category {
     font-size: 17px;
     line-height: 22px;
-    margin-bottom: 8px;
   }
 }
 
