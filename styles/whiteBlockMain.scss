@@ -27,29 +27,29 @@
             }
         }
     }
-
-    .white-block-logo-mob-ru {
-        @media(max-width: 600px) {
-            gap: 8px;
-        }
-
-        @media(max-width: 375px) {
-            flex-direction: column;
-            gap: 4px;
-        }
-    }
-
-    .white-block-logo-mob-en {
-        @media(max-width: 600px) {
-            display: flex;
-            gap: 8px;
-        }
-
-        @media(max-width: 375px) {
-            flex-direction: column;
-            gap: 4px;
-        }
-    }
+    //
+    //.white-block-logo-mob-ru {
+    //    @media(max-width: 600px) {
+    //        gap: 8px;
+    //    }
+    //
+    //    @media(max-width: 375px) {
+    //        flex-direction: column;
+    //        gap: 4px;
+    //    }
+    //}
+    //
+    //.white-block-logo-mob-en {
+    //    @media(max-width: 600px) {
+    //        display: flex;
+    //        gap: 8px;
+    //    }
+    //
+    //    @media(max-width: 375px) {
+    //        flex-direction: column;
+    //        gap: 4px;
+    //    }
+    //}
 
     .dafes-grid-block {
 

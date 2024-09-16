@@ -579,6 +579,9 @@ body {
 .dafes-menu-link-awards {
   color: #909090;
 }
+.dafes-menu-link-awards:hover {
+  color: #FEFEFE;
+}
 
 .dafes-lang-switchers {
   display: flex;
@@ -837,29 +840,6 @@ body {
   .white-block .white-block-logo-en svg {
     width: 509px;
     height: 32px;
-  }
-}
-@media (max-width: 600px) {
-  .white-block .white-block-logo-mob-ru {
-    gap: 8px;
-  }
-}
-@media (max-width: 375px) {
-  .white-block .white-block-logo-mob-ru {
-    flex-direction: column;
-    gap: 4px;
-  }
-}
-@media (max-width: 600px) {
-  .white-block .white-block-logo-mob-en {
-    display: flex;
-    gap: 8px;
-  }
-}
-@media (max-width: 375px) {
-  .white-block .white-block-logo-mob-en {
-    flex-direction: column;
-    gap: 4px;
   }
 }
 .white-block .dafes-grid-block .dafes-grid-block-right {
