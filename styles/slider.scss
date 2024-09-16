@@ -85,6 +85,15 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    margin-right: 192px;
+
+                    @media (max-width: 1199px) {
+                        margin-right: 72px;
+                    }
+
+                    @media (max-width: 743px) {
+                        margin-right: 40px;
+                    }
 
                     .bottom-svg-education {
                         svg {
@@ -94,8 +103,8 @@
                             }
 
                             @media (max-width: 743px) {
-                                width: 296px;
-                                height: 32px;
+                                width: 183px;
+                                height: 20px;
                             }
                         }
                     }
@@ -108,8 +117,8 @@
                             }
 
                             @media (max-width: 743px) {
-                                width: 260px;
-                                height: 32px;
+                                width: 162.5px;
+                                height: 20px;
                             }
                         }
                     }
@@ -122,8 +131,8 @@
                             }
 
                             @media (max-width: 743px) {
-                                width: 196px;
-                                height: 32px;
+                                width: 122.5px;
+                                height: 20px;
                             }
                         }
                     }
@@ -136,8 +145,8 @@
                             }
 
                             @media (max-width: 743px) {
-                                width: 100px;
-                                height: 32px;
+                                width: 62px;
+                                height: 20px;
                             }
                         }
                     }
@@ -150,8 +159,8 @@
                             }
 
                             @media (max-width: 743px) {
-                                width: 214px;
-                                height: 32px;
+                                width: 133px;
+                                height: 20px;
                             }
                         }
                     }

@@ -9,6 +9,8 @@
 }
 
 .black-block {
+    gap: 24px;
+
     .black-block-logos {
         .black-block-small-logo {
             width: 289px;
@@ -38,6 +40,10 @@
                 height: 40px;
             }
         }
+    }
+
+    .dafes-grid-block {
+        row-gap: 40px;
     }
 
     .dafes-grid-block-right {

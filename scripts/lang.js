@@ -7,21 +7,56 @@ function switchLanguage(lang) {
 
     const svgRuElements = document.querySelectorAll('[data-lang-svg-ru]');
     const svgEnElements = document.querySelectorAll('[data-lang-svg-en]');
+    const svgRuMobElements = document.querySelectorAll('[data-lang-svg-ru-mob]');
+    const svgEnMobElements = document.querySelectorAll('[data-lang-svg-en-mob]');
 
-    if (lang === 'ru') {
+    if (window.innerWidth > 743){
+
+        svgRuMobElements.forEach(svg => {
+            svg.style.display = 'none';
+        });
+        svgEnMobElements.forEach(svg => {
+            svg.style.display = 'none';
+        });
+
+        if (lang === 'ru') {
+            svgRuElements.forEach(svg => {
+                svg.style.display = 'block';
+            });
+            svgEnElements.forEach(svg => {
+                svg.style.display = 'none';
+            });
+        } else if (lang === 'en') {
+            svgRuElements.forEach(svg => {
+                svg.style.display = 'none';
+            });
+            svgEnElements.forEach(svg => {
+                svg.style.display = 'block';
+            });
+        }
+    } else {
         svgRuElements.forEach(svg => {
-            svg.style.display = 'block';
+            svg.style.display = 'none';
         });
         svgEnElements.forEach(svg => {
             svg.style.display = 'none';
         });
-    } else if (lang === 'en') {
-        svgRuElements.forEach(svg => {
-            svg.style.display = 'none';
-        });
-        svgEnElements.forEach(svg => {
-            svg.style.display = 'block';
-        });
+
+        if (lang === 'ru') {
+            svgRuMobElements.forEach(svg => {
+                svg.style.display = 'flex';
+            });
+            svgEnMobElements.forEach(svg => {
+                svg.style.display = 'none';
+            });
+        } else if (lang === 'en') {
+            svgRuMobElements.forEach(svg => {
+                svg.style.display = 'none';
+            });
+            svgEnMobElements.forEach(svg => {
+                svg.style.display = 'flex';
+            });
+        }
     }
 }
 
@@ -42,4 +77,12 @@ langSwitchers.forEach(button => {
 
 document.addEventListener('DOMContentLoaded', () => {
     switchLanguage('ru');
+
+    window.addEventListener('resize', () => {
+        const activeButton = document.querySelector('.dafes-switcher.active');
+        if (activeButton) {
+            const selectedLang = activeButton.getAttribute('data-lang');
+            switchLanguage(selectedLang);
+        }
+    });
 });
