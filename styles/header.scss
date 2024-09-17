@@ -1,18 +1,23 @@
 .dafes-header {
+    background: $primaryWhiteDafes;
     padding: 0 32px;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 1600px) {
+        padding: 0 26px;
+    }
 
     @media (max-width: 1199px) {
         padding: 0 16px;
     }
 }
 
-.dafes-header-awards {
-    padding: 0 24px;
+.dafes-header-black {
     background: $primaryBlackDafes;
-
-    @media (max-width: 1199px) {
-        padding: 0 16px;
-    }
 }
 
 .dafes-nav {
@@ -20,6 +25,10 @@
     justify-content: space-between;
     align-items: center;
     height: 64px;
+
+    @media (max-width: 1600px) {
+        height: 52px;
+    }
 
     @media (max-width: 1199px) {
         height: 48px;
@@ -37,8 +46,9 @@
     font-family: Inter;
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
+    letter-spacing: -0.02em;
 
     @media (max-width: 1199px) {
         font-size: 17px;
@@ -47,7 +57,7 @@
     }
 }
 
-.dafes-logo-awards {
+.dafes-logo-white {
     color: $primaryWhiteDafes;
 }
 
@@ -64,14 +74,14 @@
         font-family: Inter;
         font-size: 18px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: normal;
-        transition: color 0.3s ease;
+        transition: color 0.2s ease;
+        letter-spacing: -0.02em;
 
-        @media (max-width: 1199px) {
-            font-size: 17px;
-            line-height: 22px;
-            letter-spacing: -0.02em;
+        @media (max-width: 1440px) {
+            font-size: 15px;
+            line-height: 20px;
         }
 
         &:hover {
@@ -80,34 +90,63 @@
     }
 
     &-link-awards {
-        color: $primaryGrayDafes;
-
         &:hover {
             color: $primaryWhiteDafes;
         }
     }
 }
 
+.dafes-nav-right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    @media (max-width: 1600px) {
+        gap: 14px;
+    }
+}
+
+.dafes-nav-login {
+    a {
+        .dafes-menu-link {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    }
+}
+
 .dafes-lang-switchers {
     display: flex;
-    gap: 8px;
+    gap: 4px;
 
     .dafes-switcher {
         border: none;
-        background: none;
+        background: transparent;
         outline: none;
         cursor: pointer;
         color: $primaryGrayDafes;
         font-family: Inter;
-        font-size: 18px;
+        font-size: 13px;
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        padding: 6px 8px;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        border-radius: 3px;
+        transition: box-shadow 300ms, background 300ms, color 300ms;
 
-        @media (max-width: 1199px) {
-            font-size: 17px;
-            line-height: 22px;
-            letter-spacing: -0.02em;
+        @media (max-width: 1440px) {
+            padding: 5px 7px;
+            font-size: 10px;
+            line-height: 18px;
         }
     }
 
@@ -117,11 +156,11 @@
 
     .dafes-switcher-main.active {
         color: $primaryBlackDafes;
-        font-weight: 600;
+        box-shadow: rgba(0, 0, 0, 0.12) 0 4px 6px;
     }
 
     .dafes-switcher-awards.active {
         color: $primaryWhiteDafes;
-        font-weight: 600;
+        box-shadow: rgba(255, 255, 255, 0.5) 0 4px 6px;
     }
 }

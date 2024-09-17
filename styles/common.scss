@@ -8,6 +8,11 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 80px;
+    margin-top: 64px;
+
+    @media(max-width: 1600px) {
+        margin-top: 52px;
+    }
 
     @media(max-width: 1199px) {
         gap: 40px;
