@@ -1,5 +1,11 @@
-.block-with-plate__wrapper {
+.block-with-plate-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    .dafes-big-button {
+        background: #F2F2F2;
+        height: 100%;
+        min-height: 120px;
+    }
 }
