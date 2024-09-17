@@ -78,7 +78,6 @@ dl):where([class]) {
   чтобы избежать взаимодействие с более сложным селектором
  */
 p {
-  --paragraphMarginBottom: 24px;
   margin-block: 0;
 }
 
@@ -1201,55 +1200,60 @@ body {
   width: 100%;
   background: #F2F2F2;
 }
+@media (max-width: 1199px) {
+  .dafes-partners-wrapper {
+    padding: 24px 0;
+  }
+}
 @media (max-width: 743px) {
   .dafes-partners-wrapper {
-    padding: 16px 0;
+    padding: 32px 0;
   }
 }
-.dafes-partners-wrapper .dafes-partners {
+.dafes-partners-wrapper .dafes-partners-inner {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 @media (max-width: 1199px) {
-  .dafes-partners-wrapper .dafes-partners {
-    gap: 24px;
-  }
-}
-@media (max-width: 743px) {
-  .dafes-partners-wrapper .dafes-partners {
+  .dafes-partners-wrapper .dafes-partners-inner {
+    display: grid;
+    grid-template-columns: 166px 1fr;
     gap: 16px;
   }
 }
 @media (max-width: 743px) {
-  .dafes-partners-wrapper .dafes-partners .dafes-grid-block {
-    gap: 8px;
+  .dafes-partners-wrapper .dafes-partners-inner {
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
-.dafes-partners-wrapper .dafes-partners-link {
+.dafes-partners-wrapper .dafes-partners-inner .dafes-partners-head {
   color: #151514;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Inter;
-  font-size: 17px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
+  font-weight: 600;
+  line-height: 25px;
   letter-spacing: -0.02em;
 }
 @media (max-width: 1199px) {
-  .dafes-partners-wrapper .dafes-partners-link {
-    font-size: 15px;
-    line-height: 20px;
+  .dafes-partners-wrapper .dafes-partners-inner .dafes-partners-head {
+    font-size: 17px;
+    line-height: 22px;
   }
 }
-.dafes-partners-wrapper .dafes-partners-link-flex {
+.dafes-partners-wrapper .dafes-partners-inner .dafes-partners-logos {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 743px) {
-  .dafes-partners-wrapper .dafes-partners-link-flex {
-    gap: 8px;
+  .dafes-partners-wrapper .dafes-partners-inner .dafes-partners-logos {
+    flex-direction: column;
+    gap: 12px;
   }
 }
 
@@ -2253,20 +2257,152 @@ body {
 }
 
 .dafes-footer-wrapper {
-  height: 225px;
-  padding: 40px 0;
+  padding: 32px 0 16px;
   background: #151514;
 }
 @media (max-width: 1199px) {
-  .dafes-footer-wrapper .dafes-footer svg {
-    width: 220px;
+  .dafes-footer-wrapper {
+    padding: 24px 0 16px;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper {
+    padding: 16px;
+  }
+}
+.dafes-footer-wrapper .dafes-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1199px) {
+  .dafes-footer-wrapper .dafes-footer {
+    gap: 32px;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer {
+    gap: 24px;
+  }
+}
+.dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo {
+  grid-column: 1/3;
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo svg {
+    width: 220.286px;
     height: 48px;
   }
 }
 @media (max-width: 743px) {
-  .dafes-footer-wrapper .dafes-footer svg {
+  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo svg {
     width: 145px;
     height: 32px;
+  }
+}
+.dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-questions-two-guestions {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-support {
+    margin-top: -8px;
+  }
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-privacy {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-privacy .dafes-footer-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-privacy .dafes-footer-links {
+    display: none;
+  }
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-made-by-media {
+    display: none;
+  }
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else {
+  display: none;
+  position: relative;
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else .dafes-footer-else-list {
+  display: none;
+}
+@media (max-width: 743px) {
+  .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else .dafes-footer-else-list {
+    position: absolute;
+    background: #151514;
+    left: -212px;
+    top: -50px;
+    z-index: 10;
+    width: 250px;
+    border: #909090 1px solid;
+    padding: 4px 8px 8px;
+  }
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else .dafes-footer-else-list.active {
+  display: block;
+}
+
+.dafes-footer-text-regular {
+  color: #909090;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+@media (max-width: 1199px) {
+  .dafes-footer-text-regular {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+.dafes-footer-text-bolder {
+  color: #909090;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+@media (max-width: 1199px) {
+  .dafes-footer-text-bolder {
+    font-size: 11px;
+    line-height: 13px;
   }
 }
 

@@ -3,52 +3,55 @@
     width: 100%;
     background: $secondaryWhiteDafes;
 
-    @media (max-width: 743px) {
-        padding: 16px 0;
+    @media (max-width: 1199px) {
+        padding: 24px 0;
     }
 
-    .dafes-partners {
+    @media (max-width: 743px) {
+        padding: 32px 0;
+    }
+
+    .dafes-partners-inner {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
 
         @media (max-width: 1199px) {
-            gap: 24px;
-        }
-
-        @media (max-width: 743px) {
+            display: grid;
+            grid-template-columns: 166px 1fr;
             gap: 16px;
         }
 
-        .dafes-grid-block {
-            @media (max-width: 743px) {
-                gap: 8px;
-            }
+        @media (max-width: 743px) {
+            grid-template-columns: 1fr;
+            place-items: center;
         }
 
-        &-link {
-            color: $primaryBlackDafes;
+        .dafes-partners-head {
+            color: #151514;
             font-feature-settings: 'liga' off, 'clig' off;
             font-family: Inter;
-            font-size: 17px;
+            font-size: 20px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 22px;
+            font-weight: 600;
+            line-height: 25px;
             letter-spacing: -0.02em;
 
             @media (max-width: 1199px) {
-                font-size: 15px;
-                line-height: 20px;
+                font-size: 17px;
+                line-height: 22px;
             }
         }
 
-        &-link-flex {
+        .dafes-partners-logos {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
 
             @media (max-width: 743px) {
-                gap: 8px;
+                flex-direction: column;
+                gap: 12px;
             }
         }
     }

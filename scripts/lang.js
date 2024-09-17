@@ -10,7 +10,7 @@ function switchLanguage(lang) {
     const svgRuMobElements = document.querySelectorAll('[data-lang-svg-ru-mob]');
     const svgEnMobElements = document.querySelectorAll('[data-lang-svg-en-mob]');
 
-    if (window.innerWidth > 743){
+    if (window.innerWidth > 743) {
 
         svgRuMobElements.forEach(svg => {
             svg.style.display = 'none';
@@ -85,4 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
             switchLanguage(selectedLang);
         }
     });
+});
+
+document.querySelector('.dafes-footer-else').addEventListener('click', function () {
+    const footerList = document.querySelector('.dafes-footer-else-list');
+    if (window.innerWidth < 744) {
+        footerList.classList.toggle('active');
+    }
 });
