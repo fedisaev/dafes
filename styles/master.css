@@ -2098,12 +2098,12 @@ body {
 
 .dafes-education-top-wrapper {
   background: #5C97FF;
-  padding: 40px 0;
+  padding: 80px 0;
   margin-top: 84px;
 }
 @media (max-width: 743px) {
   .dafes-education-top-wrapper {
-    padding: 24px 0;
+    padding: 40px 0;
   }
 }
 @media (max-width: 1199px) {
@@ -2235,12 +2235,12 @@ body {
 }
 
 .dafes-education-collaboration-wrapper {
-  background: #F2F2F2;
-  padding: 40px 0;
+  background: #F0EBEB;
+  padding: 80px 0;
 }
 @media (max-width: 743px) {
   .dafes-education-collaboration-wrapper {
-    padding: 24px 0;
+    padding: 40px 0;
   }
 }
 .dafes-education-collaboration-wrapper .dafes-education-collaboration .dafes-grid-block .align-self-end-grid {
