@@ -1949,7 +1949,7 @@ body {
     gap: 4px;
   }
 }
-.white-awards-wrapper .white-awards .nomination-category-card .nominations-list .nominations-item .nominations-link {
+.white-awards-wrapper .white-awards .nomination-category-card .nominations-list .nominations-link {
   color: #151514;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Inter;
@@ -1960,7 +1960,7 @@ body {
   letter-spacing: -0.02em;
 }
 @media (max-width: 1199px) {
-  .white-awards-wrapper .white-awards .nomination-category-card .nominations-list .nominations-item .nominations-link {
+  .white-awards-wrapper .white-awards .nomination-category-card .nominations-list .nominations-link {
     font-size: 13px;
     line-height: 16px;
   }

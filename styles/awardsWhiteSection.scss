@@ -137,21 +137,19 @@
                     gap: 4px;
                 }
 
-                .nominations-item {
-                    .nominations-link {
-                        color: $primaryBlackDafes;
-                        font-feature-settings: 'liga' off, 'clig' off;
-                        font-family: Inter;
-                        font-size: 17px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 22px;
-                        letter-spacing: -0.02em;
+                .nominations-link {
+                    color: $primaryBlackDafes;
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: Inter;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: -0.02em;
 
-                        @media (max-width: 1199px) {
-                            font-size: 13px;
-                            line-height: 16px;
-                        }
+                    @media (max-width: 1199px) {
+                        font-size: 13px;
+                        line-height: 16px;
                     }
                 }
             }
