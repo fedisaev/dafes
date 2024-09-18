@@ -150,6 +150,7 @@ body {
 }
 @media (max-width: 1199px) {
   .dafes-wrapper-page {
+    margin-top: 48px;
     gap: 40px;
   }
 }
@@ -255,13 +256,13 @@ body {
   cursor: pointer;
   background: #C8B464;
   width: 100%;
-  height: 382px;
+  height: 100%;
+  min-height: 120px;
   flex-shrink: 0;
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   color: #151514;
   font-feature-settings: "liga" off, "clig" off;
   font-family: Inter;
@@ -276,7 +277,6 @@ body {
 }
 @media (max-width: 1199px) {
   .dafes-big-button {
-    height: 234px;
     padding: 8px;
     font-size: 13px;
     line-height: 16px;
@@ -285,7 +285,6 @@ body {
 @media (max-width: 743px) {
   .dafes-big-button {
     max-width: calc(100vw - 20px);
-    height: 120px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -294,7 +293,6 @@ body {
   .dafes-big-button > svg {
     width: 40px;
     height: 40px;
-    flex-shrink: 0;
   }
 }
 .dafes-big-button .dafes-big-button-go-to-page {
@@ -316,18 +314,6 @@ body {
 
 .dafes-big-button-gray {
   background: #F2F2F2;
-  color: #909090;
-  height: 270px;
-}
-@media (max-width: 1199px) {
-  .dafes-big-button-gray {
-    height: 234px;
-  }
-}
-@media (max-width: 743px) {
-  .dafes-big-button-gray {
-    height: 120px;
-  }
 }
 
 .dafes-grid-block {
@@ -965,13 +951,13 @@ body {
   }
 }
 @media (max-width: 1199px) {
-  .black-block .black-block-big-logo svg {
+  .black-block .black-block-big-logo {
     width: 520px;
     height: 78px;
   }
 }
 @media (max-width: 743px) {
-  .black-block .black-block-big-logo svg {
+  .black-block .black-block-big-logo {
     width: 265px;
     height: 40px;
   }
@@ -1118,11 +1104,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.block-with-plate-wrapper .dafes-big-button {
-  background: #F2F2F2;
-  height: 100%;
-  min-height: 120px;
-}
 
 .integration-block {
   padding-top: 40px;
@@ -1179,19 +1160,6 @@ body {
   .platform-block .dafes-grid-block-right {
     grid-row: 3/4;
     grid-column: 1/2;
-  }
-}
-.platform-block .dafes-big-button {
-  background: #F2F2F2;
-}
-@media (max-width: 1199px) {
-  .platform-block .dafes-big-button {
-    height: 234px;
-  }
-}
-@media (max-width: 743px) {
-  .platform-block .dafes-big-button {
-    height: 120px;
   }
 }
 
@@ -2288,19 +2256,15 @@ body {
 .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo {
   grid-column: 1/3;
 }
-@media (max-width: 743px) {
-  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo {
-    grid-column: 1/2;
-  }
-}
 @media (max-width: 1199px) {
-  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo svg {
+  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo {
     width: 220.286px;
     height: 48px;
   }
 }
 @media (max-width: 743px) {
-  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo svg {
+  .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-logo {
+    grid-column: 1/2;
     width: 145px;
     height: 32px;
   }
@@ -2314,15 +2278,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+.dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-questions a:hover {
+  color: #FEFEFE;
+}
 @media (max-width: 743px) {
   .dafes-footer-wrapper .dafes-footer .dafes-grid-block .dafes-footer-support {
-    margin-top: -8px;
+    margin-top: -16px;
   }
 }
 .dafes-footer-wrapper .dafes-footer .dafes-footer-legal {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal a:hover {
+  color: #FEFEFE;
 }
 .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-privacy {
   display: flex;
@@ -2348,6 +2318,9 @@ body {
   display: none;
   position: relative;
 }
+.dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else p, .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else svg {
+  cursor: pointer;
+}
 @media (max-width: 743px) {
   .dafes-footer-wrapper .dafes-footer .dafes-footer-legal .dafes-footer-else {
     display: flex;
@@ -2363,7 +2336,7 @@ body {
     position: absolute;
     background: #151514;
     left: -212px;
-    top: -50px;
+    top: -75px;
     z-index: 10;
     width: 250px;
     border: #909090 1px solid;

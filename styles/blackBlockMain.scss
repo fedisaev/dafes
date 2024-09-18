@@ -33,21 +33,20 @@
     }
 
     .black-block-big-logo {
-        svg {
-            @media (max-width: 1199px) {
-                width: 520px;
-                height: 78px;
-            }
+        @media (max-width: 1199px) {
+            width: 520px;
+            height: 78px;
+        }
 
-            @media (max-width: 743px) {
-                width: 265px;
-                height: 40px;
-            }
+        @media (max-width: 743px) {
+            width: 265px;
+            height: 40px;
         }
     }
 
     .dafes-grid-block {
         row-gap: 40px;
+
         @media (max-width: 1199px) {
             row-gap: 24px;
         }

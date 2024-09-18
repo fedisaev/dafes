@@ -53,16 +53,4 @@
             grid-column: 1/2;
         }
     }
-
-    .dafes-big-button {
-        background: $secondaryWhiteDafes;
-
-        @media(max-width: 1199px) {
-            height: 234px;
-        }
-
-        @media(max-width: 743px) {
-            height: 120px;
-        }
-    }
 }
