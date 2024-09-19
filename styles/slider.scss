@@ -85,14 +85,10 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-right: 192px;
+                    margin-right: 206px;
 
-                    @media (max-width: 1199px) {
-                        margin-right: 72px;
-                    }
-
-                    @media (max-width: 743px) {
-                        margin-right: 40px;
+                    @media (max-width: 1439px) {
+                        margin-right: 0;
                     }
 
                     .bottom-svg-education {
