@@ -7,7 +7,7 @@
         padding: 40px 0;
     }
 
-    .dafes-grid-block {
+    .education-top {
         @media (max-width: 1199px) {
             grid-template-columns: 1fr;
         }
@@ -41,6 +41,14 @@
                     width: 183px;
                     height: 20px;
                 }
+            }
+        }
+
+        .dafes-h3 {
+            grid-column: 2/5;
+
+            @media (max-width: 1199px) {
+                grid-column: 1/2;
             }
         }
 

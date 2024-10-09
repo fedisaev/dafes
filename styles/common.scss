@@ -83,12 +83,14 @@ body {
 .world-logo-with-join-button {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    justify-content: space-between;
+    height: 100%;
 
     @media (max-width: 1199px) {
         flex-direction: row;
         align-items: center;
         grid-column: 1/5;
+        gap: 24px;
     }
 
     @media (max-width: 743px) {
@@ -103,6 +105,18 @@ body {
 
         @media (max-width: 743px) {
             display: none;
+        }
+    }
+
+    a {
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+
+        .dafes-join-button {
+            @media (max-width: 1199px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -338,5 +352,3 @@ body {
 .header-on-plate-fashion {
     background: $primaryOrangeDafes;
 }
-
-

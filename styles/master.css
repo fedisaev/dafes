@@ -223,13 +223,15 @@ body {
 .world-logo-with-join-button {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  justify-content: space-between;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .world-logo-with-join-button {
     flex-direction: row;
     align-items: center;
     grid-column: 1/5;
+    gap: 24px;
   }
 }
 @media (max-width: 743px) {
@@ -246,6 +248,16 @@ body {
 @media (max-width: 743px) {
   .world-logo-with-join-button svg {
     display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .world-logo-with-join-button a {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .world-logo-with-join-button a .dafes-join-button {
+    width: 100%;
   }
 }
 
@@ -804,8 +816,8 @@ body {
 }
 @media (max-width: 1199px) {
   .slider-wrapper .slider-item-left-bottom .bottom-svg-arrow svg {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
   }
 }
 @media (max-width: 743px) {
@@ -2075,41 +2087,49 @@ body {
   }
 }
 @media (max-width: 1199px) {
-  .dafes-education-top-wrapper .dafes-grid-block {
+  .dafes-education-top-wrapper .education-top {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 1199px) {
-  .dafes-education-top-wrapper .dafes-grid-block .dafes-small-logo svg {
+  .dafes-education-top-wrapper .education-top .dafes-small-logo svg {
     width: 220.286px;
     height: 48px;
   }
 }
 @media (max-width: 743px) {
-  .dafes-education-top-wrapper .dafes-grid-block .dafes-small-logo svg {
+  .dafes-education-top-wrapper .education-top .dafes-small-logo svg {
     width: 146px;
     height: 32px;
   }
 }
 @media (max-width: 1199px) {
-  .dafes-education-top-wrapper .dafes-grid-block .dafes-grid-block-right-awards {
+  .dafes-education-top-wrapper .education-top .dafes-grid-block-right-awards {
     grid-column: 1/2;
   }
 }
 @media (max-width: 1199px) {
-  .dafes-education-top-wrapper .dafes-grid-block .dafes-grid-block-right-awards svg {
+  .dafes-education-top-wrapper .education-top .dafes-grid-block-right-awards svg {
     width: 437px;
     height: 48px;
   }
 }
 @media (max-width: 743px) {
-  .dafes-education-top-wrapper .dafes-grid-block .dafes-grid-block-right-awards svg {
+  .dafes-education-top-wrapper .education-top .dafes-grid-block-right-awards svg {
     width: 183px;
     height: 20px;
   }
 }
+.dafes-education-top-wrapper .education-top .dafes-h3 {
+  grid-column: 2/5;
+}
 @media (max-width: 1199px) {
-  .dafes-education-top-wrapper .dafes-grid-block .world-logo-with-join-button {
+  .dafes-education-top-wrapper .education-top .dafes-h3 {
+    grid-column: 1/2;
+  }
+}
+@media (max-width: 1199px) {
+  .dafes-education-top-wrapper .education-top .world-logo-with-join-button {
     grid-column: 1/2;
     grid-row: 4/5;
   }
