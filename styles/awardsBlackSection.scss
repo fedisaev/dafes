@@ -8,6 +8,100 @@
 }
 
 .black-awards {
+    .dafes-awards-greetings {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .greetings-top {
+            display: flex;
+            gap: 24px;
+
+            @media (max-width: 1199px) {
+                flex-direction: column;
+            }
+
+            &-left {
+                width: 270px;
+
+                @media (max-width: 1199px) {
+                    svg {
+                        width: 219px;
+                        height: 48px;
+                    }
+                }
+            }
+
+            &-big-logo {
+                @media (max-width: 1199px) {
+                    svg {
+                        width: 712px;
+                        height: 107px;
+                    }
+                }
+
+                @media (max-width: 743px) {
+                    svg {
+                        width: calc(100vw - 20px);
+                        height: calc((100vw - 20px)* 0.15);
+                    }
+                }
+            }
+        }
+
+        .greetings-bottom {
+            display: flex;
+            gap: 24px;
+
+            @media (max-width: 1199px) {
+                flex-direction: column;
+            }
+
+            &-left {
+                width: 270px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @media (max-width: 1199px) {
+                    order: 2;
+                    width: 100%;
+                    flex-direction: row;
+                    align-items:center;
+                    gap: 24px;
+
+                    .dafes-join-button-link {
+                        width: 100%;
+
+                        .dafes-join-button {
+                            width: 100%;
+
+                        }
+                    }
+
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                @media (max-width: 743px) {
+                    svg {
+                       display: none;
+                    }
+                }
+            }
+
+            &-right {
+                width: 858px;
+
+                @media (max-width: 1199px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .black-awards-top {
         .dafes-small-logo {
             @media (max-width: 1199px) {

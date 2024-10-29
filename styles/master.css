@@ -1242,6 +1242,88 @@ body {
   }
 }
 
+.black-awards .dafes-awards-greetings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.black-awards .dafes-awards-greetings .greetings-top {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  .black-awards .dafes-awards-greetings .greetings-top {
+    flex-direction: column;
+  }
+}
+.black-awards .dafes-awards-greetings .greetings-top-left {
+  width: 270px;
+}
+@media (max-width: 1199px) {
+  .black-awards .dafes-awards-greetings .greetings-top-left svg {
+    width: 219px;
+    height: 48px;
+  }
+}
+@media (max-width: 1199px) {
+  .black-awards .dafes-awards-greetings .greetings-top-big-logo svg {
+    width: 712px;
+    height: 107px;
+  }
+}
+@media (max-width: 743px) {
+  .black-awards .dafes-awards-greetings .greetings-top-big-logo svg {
+    width: calc(100vw - 20px);
+    height: calc((100vw - 20px) * 0.15);
+  }
+}
+.black-awards .dafes-awards-greetings .greetings-bottom {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  .black-awards .dafes-awards-greetings .greetings-bottom {
+    flex-direction: column;
+  }
+}
+.black-awards .dafes-awards-greetings .greetings-bottom-left {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  .black-awards .dafes-awards-greetings .greetings-bottom-left {
+    order: 2;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .black-awards .dafes-awards-greetings .greetings-bottom-left .dafes-join-button-link {
+    width: 100%;
+  }
+  .black-awards .dafes-awards-greetings .greetings-bottom-left .dafes-join-button-link .dafes-join-button {
+    width: 100%;
+  }
+  .black-awards .dafes-awards-greetings .greetings-bottom-left svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 743px) {
+  .black-awards .dafes-awards-greetings .greetings-bottom-left svg {
+    display: none;
+  }
+}
+.black-awards .dafes-awards-greetings .greetings-bottom-right {
+  width: 858px;
+}
+@media (max-width: 1199px) {
+  .black-awards .dafes-awards-greetings .greetings-bottom-right {
+    width: 100%;
+  }
+}
 @media (max-width: 1199px) {
   .black-awards .black-awards-top .dafes-small-logo {
     grid-column: 1/5;
